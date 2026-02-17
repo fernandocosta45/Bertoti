@@ -1,4 +1,1 @@
-# Engenharia de software
-## Atividade 1
-kdjhdkjqhdwq
-a
+Esse trecho do livro destaca a diferença entre “programação” e “engenharia de software”. A programação é vista como a atividade de escrever código, enquanto a engenharia de software envolve aplicar princípios teóricos e práticas estruturadas para construir sistemas confiáveis e sustentáveis. A comparação com outras engenharias mostra que, embora o software seja menos tangível, ele também precisa de rigor, já que erros podem ter impacto significativo na vida das pessoas. O argumento central é que, com a crescente integração do software em nosso cotidiano, torna-se indispensável adotar métodos mais disciplinados e robustos, e a proposta do livro é justamente indicar caminhos para práticas mais confiáveis.
