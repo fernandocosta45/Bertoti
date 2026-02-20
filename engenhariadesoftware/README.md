@@ -7,7 +7,12 @@ Esse trecho amplia a definição de engenharia de software, mostrando que ela n�
 ATIVIDADE 3: Requisitos não funcionais
 Listar 5 requisitos não funcionais e descrevê-los com suas palavras
 
-
+1. Desempenho: define como o sistema responde em termos de tempo e eficiência.
+   Descrição: especifica limites aceitáveis para tempo de resposta, taxa de processamento, uso de CPU, memória ou largura de banda. Ex: o sistema deve responder às requisições do usuário em até 2 segundos.
+2. Segurança: relaciona-se à proteção das informações e do sistema.
+   Descrição: garante confidencialidade, integridade e autenticidade dos dados, incluindo controle de acesso, criptografia e auditoria. Ex: apenas usuários autenticados podem acessar dados financeiros.
+3. Usabilidade: trata da facilidade de uso do sistema pelos usuários.
+   Descriçãp: avalia o quão intuitiva, aessível e fácil de aprender é a interface, considerando o público-alvo. Ex: um novo usuário deve conseguir realizar uma operação básica sem treinamento prévio.
 
 ATIVIDADE 4: Trade-offs (negociação entre requisitos não funcionais)
 Citar e descrever 3 cenários de trade-offs:
