@@ -13,6 +13,10 @@ Listar 5 requisitos não funcionais e descrevê-los com suas palavras
    Descrição: garante confidencialidade, integridade e autenticidade dos dados, incluindo controle de acesso, criptografia e auditoria. Ex: apenas usuários autenticados podem acessar dados financeiros.
 3. Usabilidade: trata da facilidade de uso do sistema pelos usuários.
    Descriçãp: avalia o quão intuitiva, aessível e fácil de aprender é a interface, considerando o público-alvo. Ex: um novo usuário deve conseguir realizar uma operação básica sem treinamento prévio.
+4. Confiabilidade: indica o grau de estabilidade e disponibilidade do sistema.
+   Descrição: define a capacidade do software de funcionar corretamente por um período de tempo, memso diante de falhas. Ex: o sistema deve estar disponível 99,9% do tempo.
+5. Manutenibiidade: refere-se à facilidade de modificar e evoluir o sistema.
+   Descrição: avalia o esforço necessário para corrigir erros, adaptar o software ou adicionar novas funcionalidades. Ex: o código deve seguir padrões de desenvolvimento e ser bem documentado. 
 
 ATIVIDADE 4: Trade-offs (negociação entre requisitos não funcionais)
 Citar e descrever 3 cenários de trade-offs:
