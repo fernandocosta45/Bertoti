@@ -4,8 +4,13 @@ Esse trecho do livro destaca a diferença entre “programação” e “engenha
 ATIVIDADE 2: Comentar com suas palavras o segundo trecho do livro Software Engineering at Google, Oreilly.(segundo post)
 Esse trecho amplia a definição de engenharia de software, mostrando que ela não se limita ao ato de programar, mas envolve práticas, ferramentas e processos que garantem a manutenção e evolução do código ao longo do tempo. A ideia central é que “engenharia de software” pode ser entendida como “programação integrada ao longo do tempo”, ou seja, um esforço contínuo para manter o código sustentável e adaptável às mudanças inevitáveis. O livro destaca três princípios fundamentais que devem orientar organizações de software: Tempo e mudança: o código precisa estar preparado para evoluir durante seu ciclo de vida - Escala e crescimento: a organização deve se adaptar conforme aumenta em tamanho e complexidade - Trade-offs e custos: decisões técnicas e organizacionais devem considerar impactos e compromissos, sempre equilibrando benefícios e riscos. Em síntese, o trecho reforça que a engenharia de software é sobre construir sistemas duradouros, capazes de acompanhar tanto a evolução tecnológica quanto as necessidades da organização.
 
-ATIVIDADE 3: Listar e explicar 3 exemplos de tradeoffs
-Aqui estão três exemplos de trade-offs comuns em engenharia de software:
+ATIVIDADE 3: Requisitos não funcionais
+Listar 5 requisitos não funcionais e descrevê-los com suas palavras
+
+
+
+ATIVIDADE 4: Trade-offs (negociação entre requisitos não funcionais)
+Citar e descrever 3 cenários de trade-offs:
 
 1. Velocidade de entrega vs. Qualidade do código
 Descrição: Entregar rapidamente uma funcionalidade pode ser essencial para atender prazos ou aproveitar oportunidades de mercado.
