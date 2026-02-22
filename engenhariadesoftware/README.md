@@ -15,8 +15,7 @@ Listar 5 requisitos não funcionais e descrevê-los com suas palavras
    Descriçãp: avalia o quão intuitiva, acessível e fácil de aprender é a interface, considerando o público-alvo. Ex: um novo usuário deve conseguir realizar uma operação básica sem treinamento prévio.
 4. Confiabilidade: indica o grau de estabilidade e disponibilidade do sistema.
    Descrição: define a capacidade do software de funcionar corretamente por um período de tempo, mesmo diante de falhas. Ex: o sistema deve estar disponível 99,9% do tempo.
-5. Escalabilidade: refere-se à capacidade de um sistema crescer e se adaptar ao aumento da demanda sem perder desempenho ou qualidade.
-   Descrição: Em outras palavras, é a propriedade que garante que o sistema continue funcionando de forma eficiente quando o número de usuários, transações ou volume de dados aumenta. 
+5. Escalabilidade: refere-se à capacidade de um sistema crescer e se adaptar ao aumento da demanda sem perder desempenho ou qualidade. Descrição: é a propriedade que garante que o sistema continue funcionando de forma eficiente quando o número de usuários, transações ou volume de dados aumenta. Ex: imagine uma loja online que recebe 1.000 acessos por dia normalmente, mas na Black Friday esse número sobe para 100.000. Um sistema escalável consegue lidar com esse aumento sem travar, mantendo o tempo de resposta rápido e a disponibilidade alta.
 
 ATIVIDADE 4: Trade-offs (negociação entre requisitos não funcionais)
 Citar e descrever 3 cenários de trade-offs:
