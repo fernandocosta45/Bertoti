@@ -36,3 +36,34 @@ Custo: Pode tornar o código mais abstrato e complicado para casos simples.
 Benefício: Facilita adaptações futuras e reduz duplicação de esforço.
 
 Esses exemplos mostram que cada decisão técnica envolve compromissos: ao ganhar em um aspecto, geralmente se perde em outro.
+
+ATIVIDADE 5: 
+
+1) É possível testar tudo?
+Como o intervalo de entrada é finito (65536 valores possíveis), em teoria é possível testar todas as entradas. Na prática, não é eficiente testar uma por uma manualmente, mas conceitualmente é possível.
+
+3) Quantas entradas mostram o erro?
+4 Entradas.
+O erro só aparece quando a diferença entre usar j - 1 e j + 1 muda o resultado final da divisão por 30000.
+Ou seja, precisamos verificar quando:
+j−1 / 30000 ≠ j+1 / 30000
+A divisão inteira em C trunca para baixo (em direção a zero). Portanto, a diferença só ocorre quando j-1 e j+1 caem em quocientes diferentes ao dividir por 30000.
+Intervalos relevantes
+•	Para valores de j muito grandes ou muito pequenos, j-1 e j+1 caem no mesmo quociente.
+•	A mudança acontece nas fronteiras múltiplas de 30000.
+Vamos calcular:
+•	Quando j−1=30000 e j+1=30000, há diferença.
+•	Mais precisamente, os pontos críticos são próximos de ± 30000.
+Testando manualmente:
+•	Se j=29999:
+o	Errado: (29999−1)/30000=29998/30000=0
+o	Correto: (29999+1)/30000=30000/30000=1 → Diferença detectada
+•	Se j=−29999:
+o	Errado: (−29999−1)/30000=−30000/30000=−1
+o	Correto: (−29999+1)/30000=−29998/30000=0 → Diferença detectada
+
+4) Quais são essas entradas?
+
+Portanto, os únicos valores que mostram o erro são:
+J = 30000; j = -30000, j = 29999 e j =−29999
+
