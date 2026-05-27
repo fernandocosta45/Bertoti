@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.FarmaciaController">
+    <children>
+        <VBox spacing="10" layoutX="20" layoutY="20">
+
+            <TextField fx:id="nomeField" promptText="Nome do medicamento"/>
+            <TextField fx:id="fabricanteField" promptText="Fabricante"/>
+            <TextField fx:id="precoField" promptText="Preço"/>
+            <TextField fx:id="quantidadeField" promptText="Quantidade"/>
+
+            <Button text="Cadastrar" onAction="#cadastrarMedicamento"/>
+            <TextField fx:id="buscarField" promptText="Buscar por nome"/>
+            <Button text="Pesquisar" onAction="#buscarMedicamento"/>
+
+            <!-- TableView em formato paisagem -->
+            <TableView fx:id="tabelaMedicamentos" prefWidth="600">
+                <columns>
+                    <TableColumn fx:id="nomeCol" text="Nome" prefWidth="150"/>
+                    <TableColumn fx:id="fabricanteCol" text="Fabricante" prefWidth="150"/>
+                    <TableColumn fx:id="precoCol" text="Preço" prefWidth="150"/>
+                    <TableColumn fx:id="quantidadeCol" text="Quantidade" prefWidth="150"/>
+                </columns>
+            </TableView>
+
+        </VBox>
+    </children>
+</AnchorPane>
