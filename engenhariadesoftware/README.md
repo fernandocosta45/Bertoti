@@ -17,25 +17,21 @@ Listar 5 requisitos não funcionais e descrevê-los com suas palavras
    Descrição: define a capacidade do software de funcionar corretamente por um período de tempo, mesmo diante de falhas. Ex: o sistema deve estar disponível 99,9% do tempo.
 5. Escalabilidade: refere-se à capacidade de um sistema crescer e se adaptar ao aumento da demanda sem perder desempenho ou qualidade. Descrição: é a propriedade que garante que o sistema continue funcionando de forma eficiente quando o número de usuários, transações ou volume de dados aumenta. Ex: imagine uma loja online que recebe 1.000 acessos por dia normalmente, mas na Black Friday esse número sobe para 100.000. Um sistema escalável consegue lidar com esse aumento sem travar, mantendo o tempo de resposta rápido e a disponibilidade alta.
 
-ATIVIDADE 4: Trade-offs (negociação entre requisitos não funcionais)
-Citar e descrever 3 cenários de trade-offs:
+ATIVIDADE 4: Trade-offs (negociação entre requisitos não funcionais) Citar e descrever 3 cenários de trade-offs:
 
-1. Velocidade de entrega vs. Qualidade do código
-Descrição: Entregar rapidamente uma funcionalidade pode ser essencial para atender prazos ou aproveitar oportunidades de mercado.
-Custo: O código pode ficar menos estruturado, dificultando manutenção futura.
-Benefício: Ganho imediato em tempo e competitividade.
+1.	Velocidade de entrega vs. Qualidade do código Descrição: Entregar rapidamente uma funcionalidade pode ser essencial para atender prazos ou aproveitar oportunidades de mercado. Custo: O código pode ficar menos estruturado, dificultando manutenção futura. Benefício: Ganho imediato em tempo e competitividade.
+Exemplo concreto:
+Uma empresa de e-commerce deseja lançar uma promoção relâmpago na Black Friday. Para colocar a funcionalidade no ar antes da concorrência, a equipe desenvolve rapidamente o módulo de descontos sem seguir todos os padrões de arquitetura e sem testes automatizados completos. A promoção é lançada a tempo e aumenta as vendas, mas posteriormente o código exige refatoração para facilitar correções e novas funcionalidades.
 
-2. Performance vs. Legibilidade
-Descrição: Otimizar ao máximo o desempenho pode levar a soluções complexas e difíceis de entender.
-Custo: Aumenta a curva de aprendizado e dificulta correções.
-Benefício: Melhor resposta do sistema em cenários críticos de uso intensivo.
+2.	Performance vs. Legibilidade Descrição: Otimizar ao máximo o desempenho pode levar a soluções complexas e difíceis de entender. Custo: Aumenta a curva de aprendizado e dificulta correções. Benefício: Melhor resposta do sistema em cenários críticos de uso intensivo.
+Exemplo concreto:
+Em um sistema de processamento financeiro que realiza milhões de cálculos por dia, um desenvolvedor substitui um algoritmo simples e intuitivo por uma versão altamente otimizada, utilizando estruturas de dados avançadas e operações de baixo nível. O tempo de execução é reduzido significativamente, mas o código se torna mais difícil de compreender e manter por outros membros da equipe.
 
-3. Generalização vs. Simplicidade
-Descrição: Criar soluções genéricas e reutilizáveis aumenta a flexibilidade.
-Custo: Pode tornar o código mais abstrato e complicado para casos simples.
-Benefício: Facilita adaptações futuras e reduz duplicação de esforço.
+4.	Generalização vs. Simplicidade Descrição: Criar soluções genéricas e reutilizáveis aumenta a flexibilidade. Custo: Pode tornar o código mais abstrato e complicado para casos simples. Benefício: Facilita adaptações futuras e reduz duplicação de esforço.
+Exemplo concreto:
+Uma equipe precisa desenvolver um sistema de cadastro de clientes. Em vez de criar apenas um formulário específico para clientes, decide construir um framework genérico capaz de cadastrar clientes, fornecedores, funcionários e outros tipos de entidades. Embora isso aumente a reutilização e facilite expansões futuras, o desenvolvimento inicial se torna mais complexo do que seria necessário para atender apenas ao requisito imediato.
 
-Esses exemplos mostram que cada decisão técnica envolve compromissos: ao ganhar em um aspecto, geralmente se perde em outro.
+Esses exemplos mostram como decisões de arquitetura e desenvolvimento frequentemente envolvem equilibrar benefícios de curto e longo prazo, característica central dos trade-offs em requisitos não funcionais.
 
 ATIVIDADE 5: 
 
