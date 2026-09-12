@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carros Esportivos</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .formulario {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .formulario h2 {
+            margin-top: 0;
+        }
+
+        .campo {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button,
+        .botao {
+            padding: 9px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .botao-cadastrar {
+            background-color: #333;
+            color: white;
+        }
+
+        .botao-editar {
+            background-color: #555;
+            color: white;
+        }
+
+        .botao-excluir {
+            background-color: #888;
+            color: white;
+        }
+
+        button:hover,
+        .botao:hover {
+            opacity: 0.8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eeeeee;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .acoes {
+            white-space: nowrap;
+        }
+
+        .form-excluir {
+            display: inline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Carros Esportivos</h1>
+
+    <p>
+        Catálogo de carros esportivos cadastrados no sistema.
+    </p>
+
+
+    <!-- =====================================================
+         FORMULÁRIO DE CADASTRO
+         ===================================================== -->
+
+    <div class="formulario">
+
+        <h2>Cadastrar novo carro</h2>
+
+        <form action="/carros/cadastrar" method="post">
+
+            <div class="campo">
+
+                <label for="fabricante">
+                    Fabricante:
+                </label>
+
+                <input
+                        type="text"
+                        id="fabricante"
+                        name="fabricante"
+                        placeholder="Ex.: Ferrari"
+                        required>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="modelo">
+                    Modelo:
+                </label>
+
+                <input
+                        type="text"
+                        id="modelo"
+                        name="modelo"
+                        placeholder="Ex.: 488 GTB"
+                        required>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="anoFabricacao">
+                    Ano de Fabricação:
+                </label>
+
+                <input
+                        type="number"
+                        id="anoFabricacao"
+                        name="anoFabricacao"
+                        placeholder="Ex.: 2020"
+                        required>
+
+            </div>
+
+
+            <button
+                    type="submit"
+                    class="botao-cadastrar">
+                Cadastrar Carro
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- =====================================================
+         TABELA DE CARROS
+         ===================================================== -->
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>Fabricante</th>
+
+            <th>Modelo</th>
+
+            <th>Ano de Fabricação</th>
+
+            <th>Ações</th>
+
+        </tr>
+
+        </thead>
+
+
+        <tbody>
+
+        <tr th:each="carro : ${carros}">
+
+            <td th:text="${carro.id}"></td>
+
+            <td th:text="${carro.fabricante}"></td>
+
+            <td th:text="${carro.modelo}"></td>
+
+            <td th:text="${carro.anoFabricacao}"></td>
+
+            <td class="acoes">
+
+                <!-- EDITAR -->
+
+                <a
+                        th:href="@{/carros/editar/{id}(id=${carro.id})}"
+                        class="botao botao-editar">
+                    Editar
+                </a>
+
+
+                <!-- EXCLUIR -->
+
+                <form
+                        th:action="@{/carros/excluir/{id}(id=${carro.id})}"
+                        method="post"
+                        class="form-excluir">
+
+                    <button
+                            type="submit"
+                            class="botao-excluir">
+                        Excluir
+                    </button>
+
+                </form>
+
+            </td>
+
+        </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+</body>
+
+</html>
